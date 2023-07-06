@@ -1,0 +1,10 @@
+#In this kata you will create a function that takes in a list and returns a list with the reverse order.
+
+def reverse_list(l):
+    revers_l = l[::-1]
+    return revers_l
+
+#also
+def reverse_list(l):
+  l.reverse()
+  return l
