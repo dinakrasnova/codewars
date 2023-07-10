@@ -1,0 +1,14 @@
+#Capitalize first letter
+def capitalize_word(word):
+    return word.capitalize()
+
+#also
+
+def capitalizeWord(word):
+    return word[0].upper() + word[1:]
+
+#also
+
+def capitalize_word(word):
+
+    return "".join(char.capitalize() for char in word.split())
