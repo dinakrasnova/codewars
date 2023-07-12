@@ -1,0 +1,7 @@
+def reverse_seq(n):
+    my_list = [i for i in range(1, n +1)]
+    return my_list[::-1]
+
+#or
+def reverseseq(n):
+    return list(range(n, 0, -1))
