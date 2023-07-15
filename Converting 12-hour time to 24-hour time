@@ -1,0 +1,18 @@
+def to24hourtime(hour, minute, period):
+    if period == "am" and hour == 12:
+        hour = 0
+    elif period == "pm" and hour != 12:
+        hour += 12
+    hour = str(hour).rjust(2,"0")
+    minute = str(minute).rjust(2,"0")
+    return hour + minute
+
+#or
+
+from datetime import datetime
+
+def to24hourtime(hour, minute, period):
+    m2 = str(hour) + ':' + str(minute) + period.upper()
+    in_time = datetime.strptime(m2, "%I:%M%p")
+    out_time = datetime.strftime(in_time, "%H%M")
+    return out_time
