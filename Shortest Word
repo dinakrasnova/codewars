@@ -1,0 +1,9 @@
+def find_short(s):
+    words = s.split()
+    shortest_word = min(words, key=len)
+    return len(shortest_word)
+
+#or
+
+def find_short(s):
+    return min(len(x) for x in s.split())
