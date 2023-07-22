@@ -3,3 +3,13 @@
 #If a name has exactly 4 letters in it, you can be sure that it has to be a friend of yours! Otherwise, you can be sure he's not...
 def friend(x):
     return [n for n in x if len(n) == 4]
+
+#or
+
+def friend(x):
+    #Code
+    names = []
+    for name in x:
+        if len(name) == 4:
+            names.append(name)
+    return names
