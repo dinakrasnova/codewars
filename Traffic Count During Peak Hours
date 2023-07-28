@@ -1,0 +1,12 @@
+def traffic_count(array):
+    hour = 4
+    max_traffic = 0
+    result = []
+
+    for i in range(0, len(array), 6):
+        hour_string = f"{hour}:00pm"
+        max_traffic = max(array[i:i + 6])
+        result.append((hour_string, max_traffic))
+        hour += 1
+
+    return result
