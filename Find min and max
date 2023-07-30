@@ -1,0 +1,10 @@
+#Implement a function that returns the minimal and the maximal value of a list (in this order).
+def get_min_max(seq):
+    min_value = min(seq)
+    max_value = max(seq)
+    return min_value, max_value
+
+#or
+
+def get_min_max(seq): 
+    return min(seq), max(seq)
